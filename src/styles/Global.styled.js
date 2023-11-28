@@ -29,6 +29,18 @@ export const Heading = styled(PaddingContainer)`
   opacity: ${({ opacity }) => opacity};
   color: ${({ theme }) => theme.colors.white};
   text-align: ${({ align }) => align};
+  font-weight: ${({ fontWeight, theme }) => {
+    switch(fontWeight) {
+      case 'regular':
+        return theme.fonts.weight.regular;
+
+      case 'semibold':
+        return theme.fonts.weight.semibold;
+
+      default:
+        return;
+    };
+  }};
   font-size: ${({ size }) => {
     switch(size) {
       case 'h1':

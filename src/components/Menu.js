@@ -37,8 +37,8 @@ const Menu = () => {
             direction="column"
             align="left"
           >
-            <Heading size="h2">Marcos L. Ferreira</Heading>
-            <Heading size="span" opacity="40%">marcos.ferreira</Heading>
+            <Heading size="h2" fontWeight="semibold">Marcos L. Ferreira</Heading>
+            <Heading size="span" opacity="40%" fontWeight="regular">marcos.ferreira</Heading>
           </FlexContainer>
         </FlexContainer>
 
