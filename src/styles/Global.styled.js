@@ -5,6 +5,7 @@ export const PaddingContainer = styled.div`
   padding-bottom: ${({ bottom }) => bottom};
   padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
+  padding: ${({ padding }) => padding};
 `;
 
 export const FlexContainer = styled(PaddingContainer)`
@@ -15,9 +16,20 @@ export const FlexContainer = styled(PaddingContainer)`
   gap: ${({ gap }) => gap};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
+  z-index: ${({ zIndex }) => zIndex};
   background: ${({ bgColor }) => bgColor ? "#121214" : ""};
-  box-shadow: ${({ shadowRight }) => shadowRight ? "12px 0px 24px 0px rgba(0, 0, 0, 0.40)" : ""};
-  box-shadow: ${({ shadowBottom }) => shadowBottom ? "0px 12px 24px 0px rgba(0, 0, 0, 0.40)" : ""};
+  box-shadow: ${({ boxShadow, theme }) => {
+    switch(boxShadow) {
+      case 'right':
+        return theme.shadows.right;
+
+      case 'bottom':
+        return theme.shadows.bottom;
+
+      default:
+        return;
+    };
+  }};
   border-bottom: ${({ borderBottom }) => borderBottom ? "1px solid #FFFFFF10" : ""};
 
   & > div {

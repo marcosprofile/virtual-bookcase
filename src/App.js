@@ -1,12 +1,18 @@
 import { ThemeProvider } from 'styled-components';
 import { theme } from './utils/Theme';
-import Menu from "./components/Menu";
+
+import { Outlet } from 'react-router-dom';
+import Menu from './components/Menu';
+import { FlexContainer } from './styles/Global.styled';
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Menu />
+        <FlexContainer>
+          <Menu />
+          <Outlet />
+        </FlexContainer>
       </ThemeProvider>
     </div>
   );

@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import {
   FlexContainer,
   Imagem,
@@ -7,13 +10,41 @@ import {
 } from "../styles/Global.styled";
 
 const Menu = () => {
+  const [selectedButton, setSelectedButton] = useState('todos');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Atualiza o estado com base na rota atual
+    switch (location.pathname) {
+      case '/':
+        setSelectedButton('todos');
+        break;
+      case '/lendo':
+        setSelectedButton('lendo');
+        break;
+      case '/lidos':
+        setSelectedButton('lidos');
+        break;
+      case '/nao_lidos':
+        setSelectedButton('naolidos');
+        break;
+      default:
+        setSelectedButton('todos'); // Define um valor padrão para casos de rota desconhecida
+    }
+  }, [location.pathname]); // Executa sempre que a rota mudar
+
+  const handleButtonClick = (buttonId) => {
+    setSelectedButton(buttonId);
+  };
+
   return (
     <FlexContainer
       direction="column"
       width="328px"
       height="100vh"
       bgColor
-      shadowRight
+      boxShadow="right"
+      zIndex="1"
       >
       <PaddingContainer
         top="32px"
@@ -35,7 +66,8 @@ const Menu = () => {
           ></Imagem>
           <FlexContainer
             direction="column"
-            align="left"
+            align="start"
+            width="240px"
           >
             <Heading size="h2" fontWeight="semibold">Marcos L. Ferreira</Heading>
             <Heading size="span" opacity="40%" fontWeight="regular">marcos.ferreira</Heading>
@@ -47,10 +79,18 @@ const Menu = () => {
           gap=".75rem"
           top="1.5rem"
         >
-          <Button href="/todos" selected>Todos</Button>
-          <Button href="/lendo">Lendo</Button>
-          <Button href="/lidos">Lidos</Button>
-          <Button href="/naolidos">Não lidos</Button>
+          <Button href="/" selected={selectedButton === 'todos'} onClick={() => handleButtonClick('todos')}>
+            Todos
+          </Button>
+          <Button href="/lendo" selected={selectedButton === 'lendo'} onClick={() => handleButtonClick('lendo')}>
+            Lendo
+          </Button>
+          <Button href="/lidos" selected={selectedButton === 'lidos'} onClick={() => handleButtonClick('lidos')}>
+            Lidos
+          </Button>
+          <Button href="/nao_lidos" selected={selectedButton === 'naolidos'} onClick={() => handleButtonClick('naolidos')}>
+            Não lidos
+          </Button>
         </FlexContainer>
       </PaddingContainer>
     </FlexContainer>
