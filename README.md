@@ -12,10 +12,11 @@ Este projeto está sendo desenvolvido com o intuito de armazenar meus livros (f�
 
 ## Desktop
 
-![image](https://github.com/marcosprofile/virtual-bookcase/assets/86635292/887b0cc1-40a0-4f8f-84ec-54d58c3b9c6e)
+![image](https://github.com/marcosprofile/virtual-bookcase/assets/86635292/fb9e05cd-8f85-47a1-b3c7-7003f930b876)
 
 
-## Protótipo
+
+## Behance
 
 <https://www.behance.net/gallery/185396517/Virtual-Bookcase>
 
