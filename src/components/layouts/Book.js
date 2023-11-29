@@ -9,6 +9,14 @@ import {
 const Book = ({ data }) => {
   return (
     <FlexContainer direction="column">
+      <FlexContainer justify="center">
+        <Imagem
+          width="24px"
+          height="24px"
+          src={ data.book_status }
+          draggable="false"
+        />
+      </FlexContainer>
       <Heading
         padding=".5rem"
         align="center" size="p"
@@ -48,7 +56,7 @@ const Book = ({ data }) => {
           title={ data.book_autor }
           width="100%"
           size="span"
-          fontWeight="semibold"
+          fontWeight="regular"
           opacity=".4"
           textOverflow
           whiteSpace

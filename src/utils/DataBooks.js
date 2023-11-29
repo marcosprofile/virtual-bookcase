@@ -1,3 +1,4 @@
+// Books
 import Book_1 from '../assets/novembro_9.png';
 import Book_2 from '../assets/todas_as_suas_imperfeicoes.png';
 import Book_3 from '../assets/e_assim_que_acaba.png';
@@ -23,12 +24,19 @@ import Book____1 from '../assets/e_assim_que_acaba.png';
 import Book____2 from '../assets/e_assim_que_comeca.png';
 import Book____3 from '../assets/verity.png';
 
+// Status
+import NaoLido from '../assets/status/nao_lido.png';
+import Lendo from '../assets/status/lendo.png';
+import Lido from '../assets/status/lido.png';
+
+
 export const booksDetails = [
   {
     id: 0,
     book_name: 'Novembro 9',
     book_autor: 'Colleen Hoover',
     book_pages: '352 páginas',
+    book_status: NaoLido,
     book_img: Book_1
   },
   {
@@ -36,6 +44,7 @@ export const booksDetails = [
     book_name: 'Todas as suas imperfeições',
     book_autor: 'Colleen Hoover',
     book_pages: '304 páginas',
+    book_status: NaoLido,
     book_img: Book_2
   },
   {
@@ -43,6 +52,7 @@ export const booksDetails = [
     book_name: 'É assim que acaba',
     book_autor: 'Colleen Hoover',
     book_pages: '368 páginas',
+    book_status: NaoLido,
     book_img: Book_3
   },
   {
@@ -50,6 +60,7 @@ export const booksDetails = [
     book_name: 'É assim que começa',
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
+    book_status: NaoLido,
     book_img: Book_4
   },
   {
@@ -57,6 +68,7 @@ export const booksDetails = [
     book_name: 'O lado feio do amor',
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
+    book_status: NaoLido,
     book_img: Book_5
   },
   {
@@ -64,6 +76,7 @@ export const booksDetails = [
     book_name: 'Verity',
     book_autor: 'Colleen Hoover',
     book_pages: '320 páginas',
+    book_status: NaoLido,
     book_img: Book_6
   },
   {
@@ -71,6 +84,7 @@ export const booksDetails = [
     book_name: 'Até o verão terminar',
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
+    book_status: NaoLido,
     book_img: Book_7
   },
   {
@@ -78,6 +92,7 @@ export const booksDetails = [
     book_name: 'Tarde demais',
     book_autor: 'Colleen Hoover',
     book_pages: '384 páginas',
+    book_status: NaoLido,
     book_img: Book_8
   }
 ]
@@ -88,6 +103,7 @@ export const booksReadings = [
     book_name: 'A biblioteca da meia-noite',
     book_autor: 'Matt Haig',
     book_pages: '200 / 308 páginas',
+    book_status: Lendo,
     book_img: Book__1
   }
 ]
@@ -98,6 +114,7 @@ export const booksFinisheds = [
     book_name: 'Nós estivemos aqui',
     book_autor: 'P. M. Chester',
     book_pages: '15 / 15 páginas',
+    book_status: Lido,
     book_img: Book___1
   },
   {
@@ -105,6 +122,7 @@ export const booksFinisheds = [
     book_name: 'Mitologia nórdica',
     book_autor: 'Neil Gaiman',
     book_pages: '288 / 288 páginas',
+    book_status: Lido,
     book_img: Book___2
   },
   {
@@ -112,6 +130,7 @@ export const booksFinisheds = [
     book_name: 'Todas as flores que não te enviei',
     book_autor: 'Felipe Rocha',
     book_pages: '232 / 232 páginas',
+    book_status: Lido,
     book_img: Book___3
   },
   {
@@ -119,6 +138,7 @@ export const booksFinisheds = [
     book_name: 'Era uma vez um coração partido',
     book_autor: 'Stephanie Garber',
     book_pages: '336 / 336 páginas',
+    book_status: Lido,
     book_img: Book___4
   },
   {
@@ -126,6 +146,7 @@ export const booksFinisheds = [
     book_name: 'O ladrão de raios',
     book_autor: 'Rick Riordan',
     book_pages: '400 / 400 páginas',
+    book_status: Lido,
     book_img: Book___5
   },
   {
@@ -133,6 +154,7 @@ export const booksFinisheds = [
     book_name: 'O mar de monstros',
     book_autor: 'Rick Riordan',
     book_pages: '304 / 304 páginas',
+    book_status: Lido,
     book_img: Book___6
   },
 ]
@@ -143,6 +165,7 @@ export const booksUnreads = [
     book_name: 'É assim que acaba',
     book_autor: 'Colleen Hoover',
     book_pages: '368 páginas',
+    book_status: NaoLido,
     book_img: Book____1
   },
   {
@@ -150,6 +173,7 @@ export const booksUnreads = [
     book_name: 'É assim que começa',
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
+    book_status: NaoLido,
     book_img: Book____2
   },
   {
@@ -157,6 +181,7 @@ export const booksUnreads = [
     book_name: 'Verity',
     book_autor: 'Colleen Hoover',
     book_pages: '320 páginas',
+    book_status: NaoLido,
     book_img: Book____3
   },
 ]

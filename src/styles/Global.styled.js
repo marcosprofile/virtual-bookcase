@@ -18,10 +18,22 @@ export const FlexContainer = styled(PaddingContainer)`
   gap: ${({ gap }) => gap};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
+  border-radius: ${({ radius }) => radius};
   z-index: ${({ zIndex }) => zIndex};
   box-sizing: border-box;
   overflow-y: ${({ overflowX }) => overflowX ? "auto" : ""};
-  background: ${({ bgColor }) => bgColor ? "#121214" : ""};
+  background: ${({ bgColor, theme }) => {
+    switch(bgColor) {
+      case 'black':
+        return theme.colors.black;
+      
+      case 'primary':
+        return theme.colors.primary;
+
+      default:
+        return;
+    }
+  }};
   box-shadow: ${({ boxShadow, theme }) => {
     switch(boxShadow) {
       case 'right':
@@ -42,7 +54,6 @@ export const FlexContainer = styled(PaddingContainer)`
 `;
 
 export const Heading = styled(PaddingContainer)`
-  letter-spacing: -0.32px;
   width: ${({ width }) => width};
   line-height: 156%;
   opacity: ${({ opacity }) => opacity};
