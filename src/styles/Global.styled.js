@@ -13,10 +13,14 @@ export const FlexContainer = styled(PaddingContainer)`
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ justify }) => justify};
   align-items: ${({ align }) => align};
+  align-content: ${({ alignContent }) => alignContent ? "baseline" : ""};
+  flex-wrap: ${({ flexWrap }) => flexWrap ? "wrap" : ""};
   gap: ${({ gap }) => gap};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   z-index: ${({ zIndex }) => zIndex};
+  box-sizing: border-box;
+  overflow-y: ${({ overflowX }) => overflowX ? "auto" : ""};
   background: ${({ bgColor }) => bgColor ? "#121214" : ""};
   box-shadow: ${({ boxShadow, theme }) => {
     switch(boxShadow) {
@@ -38,9 +42,15 @@ export const FlexContainer = styled(PaddingContainer)`
 `;
 
 export const Heading = styled(PaddingContainer)`
+  letter-spacing: -0.32px;
+  width: ${({ width }) => width};
+  line-height: 156%;
   opacity: ${({ opacity }) => opacity};
   color: ${({ theme }) => theme.colors.white};
   text-align: ${({ align }) => align};
+  text-overflow: ${({ textOverflow }) => textOverflow ? "ellipsis" : ""};
+  white-space: ${({ whiteSpace }) => whiteSpace ? "nowrap" : ""};
+  overflow: ${({ overflow }) => overflow ? "hidden" : ""};
   font-weight: ${({ fontWeight, theme }) => {
     switch(fontWeight) {
       case 'regular':

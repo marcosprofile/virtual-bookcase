@@ -1,5 +1,6 @@
 import React from 'react'
 import { FlexContainer, Heading } from '../styles/Global.styled'
+import Reading from '../components/Reading'
 
 const Lendo = () => {
   return (
@@ -7,8 +8,8 @@ const Lendo = () => {
       <FlexContainer padding="1.5rem 2.5rem" bgColor boxShadow="bottom" width="100%">
         <Heading size="h1">Lendo</Heading>
       </FlexContainer>
-      <FlexContainer padding="2.5rem">
-        <Heading size="h2" opacity=".4">Livros que estou lendo</Heading>
+      <FlexContainer padding="2rem 2.5rem" height="100vh" overflowX>
+        <Reading />
       </FlexContainer>
     </FlexContainer>
   )
