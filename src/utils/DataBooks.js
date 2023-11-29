@@ -94,6 +94,102 @@ export const booksDetails = [
     book_pages: '384 páginas',
     book_status: NaoLido,
     book_img: Book_8
+  },
+  {
+    id: 8,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 10,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 11,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 12,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 13,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 14,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 15,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 16,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 17,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 18,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 19,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
+  },
+  {
+    id: 20,
+    book_name: 'Tarde demais',
+    book_autor: 'Colleen Hoover',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: Book_8
   }
 ]
 

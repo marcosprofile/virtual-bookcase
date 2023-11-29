@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlexContainer, Heading, Imagem } from '../styles/Global.styled';
+import { FlexContainer, Heading, Imagem, Scroll } from '../styles/Global.styled';
 import AllBooks from '../components/AllBooks';
 import { booksDetails } from '../utils/DataBooks';
 
@@ -36,9 +36,25 @@ const Todos = () => {
           </FlexContainer>
         </FlexContainer>
       </FlexContainer>
-      <FlexContainer padding="2rem 2.5rem" height="100vh" overflowX>
+      <FlexContainer padding="2rem 2.5rem" height="100vh" overflowX position="relative">
         <AllBooks />
       </FlexContainer>
+      <FlexContainer
+          position="absolute"
+          justify="center"
+          width="-webkit-fill-available"
+          p_bottom="40px"
+        >
+          <Scroll
+            bgColor="black_light"
+            padding=".5rem 1rem"
+            radius="4rem"
+            boxShadow="back"
+            pointer
+          >
+            <Heading fontWeight="semibold">Voltar ao topo</Heading>
+          </Scroll>
+        </FlexContainer>
     </FlexContainer>
   )
 }

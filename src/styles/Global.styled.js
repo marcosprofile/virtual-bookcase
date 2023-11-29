@@ -1,27 +1,33 @@
 import styled from 'styled-components';
 
 export const PaddingContainer = styled.div`
-  padding-top: ${({ top }) => top};
   padding-bottom: ${({ bottom }) => bottom};
-  padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
   padding: ${({ padding }) => padding};
+  padding-left: ${({ left }) => left};
+  padding-top: ${({ top }) => top};
 `;
 
 export const FlexContainer = styled(PaddingContainer)`
   display: flex;
+  align-content: ${({ alignContent }) => alignContent ? "baseline" : ""};
+  overflow-y: ${({ overflowX }) => overflowX ? "auto" : ""};
+  flex-wrap: ${({ flexWrap }) => flexWrap ? "wrap" : ""};
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ justify }) => justify};
-  align-items: ${({ align }) => align};
-  align-content: ${({ alignContent }) => alignContent ? "baseline" : ""};
-  flex-wrap: ${({ flexWrap }) => flexWrap ? "wrap" : ""};
-  gap: ${({ gap }) => gap};
-  width: ${({ width }) => width};
-  height: ${({ height }) => height};
   border-radius: ${({ radius }) => radius};
+  position: ${({ position }) => position};
+  bottom: ${({ p_bottom }) => p_bottom};
+  align-items: ${({ align }) => align};
+  display: ${({ display }) => display};
   z-index: ${({ zIndex }) => zIndex};
+  right: ${({ p_right }) => p_right};
+  height: ${({ height }) => height};
+  left: ${({ p_left }) => p_left};
+  width: ${({ width }) => width};
+  top: ${({ p_top }) => p_top};
+  gap: ${({ gap }) => gap};
   box-sizing: border-box;
-  overflow-y: ${({ overflowX }) => overflowX ? "auto" : ""};
   background: ${({ bgColor, theme }) => {
     switch(bgColor) {
       case 'black':
@@ -29,6 +35,9 @@ export const FlexContainer = styled(PaddingContainer)`
       
       case 'primary':
         return theme.colors.primary;
+
+      case 'black_light':
+        return theme.colors.black_light;
 
       default:
         return;
@@ -42,6 +51,9 @@ export const FlexContainer = styled(PaddingContainer)`
       case 'bottom':
         return theme.shadows.bottom;
 
+      case 'back':
+        return theme.shadows.back;
+
       default:
         return;
     };
@@ -51,17 +63,35 @@ export const FlexContainer = styled(PaddingContainer)`
   & > div {
     flex: ${({ fullWidthChild }) => fullWidthChild && 1};
   };
+
+  /* Scroll */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3D3D3D;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121214;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333333;
+}
 `;
 
 export const Heading = styled(PaddingContainer)`
-  width: ${({ width }) => width};
-  line-height: 156%;
-  opacity: ${({ opacity }) => opacity};
-  color: ${({ theme }) => theme.colors.white};
-  text-align: ${({ align }) => align};
   text-overflow: ${({ textOverflow }) => textOverflow ? "ellipsis" : ""};
   white-space: ${({ whiteSpace }) => whiteSpace ? "nowrap" : ""};
   overflow: ${({ overflow }) => overflow ? "hidden" : ""};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: ${({ opacity }) => opacity};
+  text-align: ${({ align }) => align};
+  width: ${({ width }) => width};
+  line-height: 156%;
   font-weight: ${({ fontWeight, theme }) => {
     switch(fontWeight) {
       case 'regular':
@@ -95,10 +125,10 @@ export const Heading = styled(PaddingContainer)`
 `;
 
 export const Imagem = styled.img`
-  width: ${({ width }) => width};
-  height: ${({ height }) => height};
-  border-radius: ${({ radius }) => radius};
   box-shadow: ${({ shadow }) => shadow ? "0px 0px 12px 4px rgba(0, 0, 0, 0.50)" : ""};
+  border-radius: ${({ radius }) => radius};
+  height: ${({ height }) => height};
+  width: ${({ width }) => width};
 `;
 
 export const Book = styled.img`
@@ -107,17 +137,27 @@ export const Book = styled.img`
 
 export const Button = styled.a`
   display: inline-block;
-  width: auto;
-  padding: 1rem;
-  font-weight: 500;
-  text-decoration: none;
+  cursor: ${({ selected }) => selected ? "default" : "pointer"};
   background: ${({ selected }) => selected ? "#4368EF" : ""};
   color: ${({ theme }) => theme.colors.white};
-  border-radius: .5rem;
-  cursor: ${({ selected }) => selected ? "default" : "pointer"};
   transition: all .2s linear;
+  text-decoration: none;
+  border-radius: .5rem;
+  font-weight: 500;
+  padding: 1rem;
+  width: auto;
 
   &:hover {
     background: ${({ selected }) => selected ? "" : "#333333"};
   };
 `;
+
+export const Scroll = styled(FlexContainer).attrs({ as: 'a'})`
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .2s ease;
+
+  &:hover {
+    transform: scale(.96);
+  }
+`
