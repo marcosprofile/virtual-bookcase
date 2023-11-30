@@ -497,5 +497,7 @@ export const booksDetails = [
 ]
 
 export const booksReadings = booksDetails.filter(book => book.book_status === Lendo)
+
 export const booksFinisheds = booksDetails.filter(book => book.book_status === Lido)
+
 export const booksUnreads = booksDetails.filter(book => book.book_status === NaoLido)
