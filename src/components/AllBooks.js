@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { booksDetails } from '../utils/DataBooks';
-import { FlexContainer } from '../styles/Global.styled';
+import { FlexContainer, Heading, Scroll } from '../styles/Global.styled';
 import Book from './layouts/Book';
 
 const AllBooks = () => {
@@ -13,6 +13,24 @@ const AllBooks = () => {
           <Book data={book} />
         </FlexContainer>
       ))}
+
+      <FlexContainer
+        position="absolute"
+        justify="center"
+        width="-webkit-fill-available"
+        p_bottom="40px"
+      >
+        <Scroll
+          bgColor="black_light"
+          padding=".5rem 1rem"
+          radius="4rem"
+          boxShadow="back"
+          href="#0"
+          pointer
+        >
+          <Heading fontWeight="semibold">Voltar ao topo</Heading>
+        </Scroll>
+      </FlexContainer>
     </FlexContainer>
   )
 }

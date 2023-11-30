@@ -8,7 +8,7 @@ import {
 
 const Book = ({ data }) => {
   return (
-    <FlexContainer direction="column">
+    <FlexContainer direction="column" id={ data.id }>
       <FlexContainer justify="center">
         <Imagem
           width="24px"
@@ -57,7 +57,7 @@ const Book = ({ data }) => {
           width="100%"
           size="span"
           fontWeight="regular"
-          opacity=".4"
+          opacity=".5"
           textOverflow
           whiteSpace
           overflow

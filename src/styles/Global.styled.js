@@ -64,7 +64,10 @@ export const FlexContainer = styled(PaddingContainer)`
     flex: ${({ fullWidthChild }) => fullWidthChild && 1};
   };
 
-  /* Scroll */
+/* Scroll */
+scroll-behavior: smooth;
+scroll-margin-top: 50px;
+
 ::-webkit-scrollbar {
   width: 14px;
 }
