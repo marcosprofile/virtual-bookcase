@@ -1,5 +1,5 @@
 # Virtual Bookcase
-> Em desenvolvimento...
+> 🔗 Ver projeto <https://virtual-bookcase.vercel.app/>
 
 <br>
 
