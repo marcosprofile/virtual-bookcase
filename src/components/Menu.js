@@ -37,6 +37,8 @@ const Menu = () => {
     setSelectedButton(buttonId);
   };
 
+  const nome = "Marcos L. Ferreira"
+
   return (
     <FlexContainer
       direction="column"
@@ -67,10 +69,19 @@ const Menu = () => {
           <FlexContainer
             direction="column"
             align="start"
-            width="240px"
+            width="220px"
           >
-            <Heading size="h2" fontWeight="semibold">Marcos L. Ferreira</Heading>
-            <Heading size="span" opacity="40%" fontWeight="regular">marcos.ferreira</Heading>
+            <Heading
+              width="100%"
+              size="h2"
+              fontWeight="semibold"
+              textOverflow
+              whiteSpace
+              overflow
+              title={nome}
+            >
+              {nome}
+            </Heading>
           </FlexContainer>
         </FlexContainer>
 
