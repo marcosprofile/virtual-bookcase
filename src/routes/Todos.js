@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlexContainer, Heading, Imagem, Scroll } from '../styles/Global.styled';
+import { FlexContainer, Heading, Imagem } from '../styles/Global.styled';
 import AllBooks from '../components/AllBooks';
 import { booksDetails } from '../utils/DataBooks';
 

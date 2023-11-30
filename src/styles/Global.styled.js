@@ -63,27 +63,6 @@ export const FlexContainer = styled(PaddingContainer)`
   & > div {
     flex: ${({ fullWidthChild }) => fullWidthChild && 1};
   };
-
-/* Scroll */
-scroll-behavior: smooth;
-scroll-margin-top: 50px;
-
-::-webkit-scrollbar {
-  width: 14px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #3D3D3D;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #121214;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #333333;
-}
 `;
 
 export const Heading = styled(PaddingContainer)`
