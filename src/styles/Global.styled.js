@@ -156,11 +156,12 @@ export const Button = styled.a`
 `;
 
 export const Scroll = styled(FlexContainer).attrs({ as: 'a'})`
+  color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
   text-decoration: none;
   transition: all .2s ease;
-
+  
   &:hover {
-    transform: scale(.96);
+    transform: scale(.95);
   }
 `

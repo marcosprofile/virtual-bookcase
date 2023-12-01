@@ -4,6 +4,8 @@ import { booksFinisheds } from '../utils/DataBooks';
 import { FlexContainer, Heading, Scroll } from '../styles/Global.styled';
 import Book from './layouts/Book';
 
+import { FaAnglesUp } from 'react-icons/fa6';
+
 const Finished = () => {
   return (
     <FlexContainer flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="4rem">
@@ -22,11 +24,14 @@ const Finished = () => {
         <Scroll
           bgColor="black_light"
           padding=".5rem 1rem"
-          radius="4rem"
           boxShadow="back"
+          align="center"
+          radius="4rem"
+          gap=".5rem"
           href="#0"
           pointer
         >
+          <FaAnglesUp />
           <Heading fontWeight="semibold">Voltar ao topo</Heading>
         </Scroll>
       </FlexContainer>

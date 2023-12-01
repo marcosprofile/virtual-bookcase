@@ -1,112 +1,10 @@
-// Books
-import Book_1 from '../assets/novembro_9.png';
-import Book_2 from '../assets/todas_as_suas_imperfeicoes.png';
-import Book_3 from '../assets/e_assim_que_acaba.png';
-import Book_4 from '../assets/e_assim_que_comeca.png';
-import Book_5 from '../assets/o_lado_feio_do_amor.png';
-import Book_6 from '../assets/verity.png';
-import Book_7 from '../assets/ate_o_verao_terminar.png';
-import Book_8 from '../assets/tarde_demais.png';
-import Book_9 from '../assets/uma_segunda_chance.png';
-import Book_10 from '../assets/um_caso_perdido.png';
-import Book_11 from '../assets/sem_esperanca.png';
-import Book_12 from '../assets/em_busca_de_cinderela.png';
-import Book_13 from '../assets/as_mil_partes_do_meu_coracao.png';
-import Book_14 from '../assets/a_razao_do_amor.png';
-import Book_15 from '../assets/a_hipotese_do_amor.png';
-import Book_16 from '../assets/amor_teoricamente.png';
-import Book_17 from '../assets/o_duque_e_eu.png';
-import Book_18 from '../assets/o_visconde_que_me_amava.png';
-import Book_19 from '../assets/um_perfeito_cavalheiro.png';
-import Book_20 from '../assets/os_segredos_de_colin_bridgerton.png';
-import Book_21 from '../assets/para_sir_phillip.png';
-import Book_22 from '../assets/o_conde_enfeiticado.png';
-import Book_23 from '../assets/o_beijo_inesquecivel.png';
-import Book_24 from '../assets/a_caminho_do_altar.png';
-import Book_25 from '../assets/e_viveram_felizes_para_sempre.png';
-import Book_26 from '../assets/cronicas_da_sociedade_de_lady_whistledown.png';
-import Book_27 from '../assets/fallen.png';
-import Book_28 from '../assets/tormenta.png';
-import Book_29 from '../assets/paixao.png';
-import Book_30 from '../assets/extase.png';
-import Book_31 from '../assets/como_sobreviver_a_realeza.png';
-import Book_32 from '../assets/sua_alteza_real.png';
-import Book_33 from '../assets/eu_e_esse_meu_coracao.png';
-import Book_34 from '../assets/antes_que_as_luzes_se_apaguem.png';
-import Book_35 from '../assets/imperfeitos.png';
-import Book_36 from '../assets/a_biblioteca_da_meia_noite.png';
-import Book_37 from '../assets/todo_esse_tempo.png';
-import Book_38 from '../assets/amendoas.png';
-import Book_39 from '../assets/uma_tempestade_de_verao.png';
-import Book_40 from '../assets/uma_farsa_de_amor.png';
-import Book_41 from '../assets/amores_verdadeiros.png';
-import Book_42 from '../assets/teto_para_dois.png';
-import Book_43 from '../assets/pessoas_normais.png';
-import Book_44 from '../assets/voce_ligou_para_o_sam.png';
-import Book_45 from '../assets/o_morro_dos_ventos_uivantes.png';
-import Book_46 from '../assets/o_clube_do_livro_dos_homens.png';
-import Book_47 from '../assets/o_pequeno_principe.png';
-import Book_48 from '../assets/nos_estivemos_aqui.png';
+// Images
+import ImageBook from '../utils/Image';
 
 // Status
 import NaoLido from '../assets/status/nao_lido.png';
 import Lendo from '../assets/status/lendo.png';
 import Lido from '../assets/status/lido.png';
-
-function Capa(param) {
-  const Books = [
-    Book_1,
-    Book_2,
-    Book_3,
-    Book_4,
-    Book_5,
-    Book_6,
-    Book_7,
-    Book_8,
-    Book_9,
-    Book_10,
-    Book_11,
-    Book_12,
-    Book_13,
-    Book_14,
-    Book_15,
-    Book_16,
-    Book_17,
-    Book_18,
-    Book_19,
-    Book_20,
-    Book_21,
-    Book_22,
-    Book_23,
-    Book_24,
-    Book_25,
-    Book_26,
-    Book_27,
-    Book_28,
-    Book_29,
-    Book_30,
-    Book_31,
-    Book_32,
-    Book_33,
-    Book_34,
-    Book_35,
-    Book_36,
-    Book_37,
-    Book_38,
-    Book_39,
-    Book_40,
-    Book_41,
-    Book_42,
-    Book_43,
-    Book_44,
-    Book_45,
-    Book_46,
-    Book_47,
-    Book_48,
-  ]
-
-  return Books[param]
-}
 
 
 export const booksDetails = [
@@ -116,7 +14,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '352 páginas',
     book_status: NaoLido,
-    book_img: Capa(0)
+    book_img: ImageBook[0]
   },
   {
     id: 1,
@@ -124,7 +22,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '304 páginas',
     book_status: NaoLido,
-    book_img: Capa(1)
+    book_img: ImageBook[1]
   },
   {
     id: 2,
@@ -132,7 +30,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '368 páginas',
     book_status: NaoLido,
-    book_img: Capa(2)
+    book_img: ImageBook[2]
   },
   {
     id: 3,
@@ -140,7 +38,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(3)
+    book_img: ImageBook[3]
   },
   {
     id: 4,
@@ -148,7 +46,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(4)
+    book_img: ImageBook[4]
   },
   {
     id: 5,
@@ -156,7 +54,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '320 páginas',
     book_status: NaoLido,
-    book_img: Capa(5)
+    book_img: ImageBook[5]
   },
   {
     id: 6,
@@ -164,7 +62,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(6)
+    book_img: ImageBook[6]
   },
   {
     id: 7,
@@ -172,7 +70,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '384 páginas',
     book_status: NaoLido,
-    book_img: Capa(7)
+    book_img: ImageBook[7]
   },
   {
     id: 8,
@@ -180,7 +78,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '368 páginas',
     book_status: NaoLido,
-    book_img: Capa(8)
+    book_img: ImageBook[8]
   },
   {
     id: 9,
@@ -188,7 +86,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '384 páginas',
     book_status: NaoLido,
-    book_img: Capa(9)
+    book_img: ImageBook[9]
   },
   {
     id: 10,
@@ -196,7 +94,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '320 páginas',
     book_status: NaoLido,
-    book_img: Capa(10)
+    book_img: ImageBook[10]
   },
   {
     id: 11,
@@ -204,7 +102,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '256 páginas',
     book_status: NaoLido,
-    book_img: Capa(11)
+    book_img: ImageBook[11]
   },
   {
     id: 12,
@@ -212,7 +110,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(12)
+    book_img: ImageBook[12]
   },
   {
     id: 13,
@@ -220,7 +118,7 @@ export const booksDetails = [
     book_autor: 'Ali Hazelwood',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(13)
+    book_img: ImageBook[13]
   },
   {
     id: 14,
@@ -228,7 +126,7 @@ export const booksDetails = [
     book_autor: 'Ali Hazelwood',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(14)
+    book_img: ImageBook[14]
   },
   {
     id: 15,
@@ -236,7 +134,7 @@ export const booksDetails = [
     book_autor: 'Colleen Hoover',
     book_pages: '368 páginas',
     book_status: NaoLido,
-    book_img: Capa(15)
+    book_img: ImageBook[15]
   },
   {
     id: 16,
@@ -244,7 +142,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '288 páginas',
     book_status: NaoLido,
-    book_img: Capa(16)
+    book_img: ImageBook[16]
   },
   {
     id: 17,
@@ -252,7 +150,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '288 páginas',
     book_status: NaoLido,
-    book_img: Capa(17)
+    book_img: ImageBook[17]
   },
   {
     id: 18,
@@ -260,7 +158,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '304 páginas',
     book_status: NaoLido,
-    book_img: Capa(18)
+    book_img: ImageBook[18]
   },
   {
     id: 19,
@@ -268,7 +166,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(19)
+    book_img: ImageBook[19]
   },
   {
     id: 20,
@@ -276,7 +174,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '276 páginas',
     book_status: NaoLido,
-    book_img: Capa(20)
+    book_img: ImageBook[20]
   },
   {
     id: 21,
@@ -284,7 +182,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '304 páginas',
     book_status: NaoLido,
-    book_img: Capa(21)
+    book_img: ImageBook[21]
   },
   {
     id: 22,
@@ -292,7 +190,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '272 páginas',
     book_status: NaoLido,
-    book_img: Capa(22)
+    book_img: ImageBook[22]
   },
   {
     id: 23,
@@ -300,7 +198,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '320 páginas',
     book_status: NaoLido,
-    book_img: Capa(23)
+    book_img: ImageBook[23]
   },
   {
     id: 24,
@@ -308,7 +206,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '320 páginas',
     book_status: NaoLido,
-    book_img: Capa(24)
+    book_img: ImageBook[24]
   },
   {
     id: 25,
@@ -316,7 +214,7 @@ export const booksDetails = [
     book_autor: 'Julia Quinn',
     book_pages: '384 páginas',
     book_status: NaoLido,
-    book_img: Capa(25)
+    book_img: ImageBook[25]
   },
   {
     id: 26,
@@ -324,7 +222,7 @@ export const booksDetails = [
     book_autor: 'Lauren Kate',
     book_pages: '406 páginas',
     book_status: NaoLido,
-    book_img: Capa(26)
+    book_img: ImageBook[26]
   },
   {
     id: 27,
@@ -332,7 +230,7 @@ export const booksDetails = [
     book_autor: 'Lauren Kate',
     book_pages: '392 páginas',
     book_status: NaoLido,
-    book_img: Capa(27)
+    book_img: ImageBook[27]
   },
   {
     id: 28,
@@ -340,7 +238,7 @@ export const booksDetails = [
     book_autor: 'Lauren Kate',
     book_pages: '378 páginas',
     book_status: NaoLido,
-    book_img: Capa(28)
+    book_img: ImageBook[28]
   },
   {
     id: 29,
@@ -348,7 +246,7 @@ export const booksDetails = [
     book_autor: 'Lauren Kate',
     book_pages: '350 páginas',
     book_status: NaoLido,
-    book_img: Capa(29)
+    book_img: ImageBook[29]
   },
   {
     id: 30,
@@ -356,7 +254,7 @@ export const booksDetails = [
     book_autor: 'Rachel Hawkins',
     book_pages: '312 páginas',
     book_status: NaoLido,
-    book_img: Capa(30)
+    book_img: ImageBook[30]
   },
   {
     id: 31,
@@ -364,7 +262,7 @@ export const booksDetails = [
     book_autor: 'Rachel Hawkins',
     book_pages: '304 páginas',
     book_status: NaoLido,
-    book_img: Capa(31)
+    book_img: ImageBook[31]
   },
   {
     id: 32,
@@ -372,7 +270,7 @@ export const booksDetails = [
     book_autor: 'C. C. Hunter',
     book_pages: '424 páginas',
     book_status: NaoLido,
-    book_img: Capa(32)
+    book_img: ImageBook[32]
   },
   {
     id: 33,
@@ -380,7 +278,7 @@ export const booksDetails = [
     book_autor: 'Jay Asher',
     book_pages: '256 páginas',
     book_status: NaoLido,
-    book_img: Capa(33)
+    book_img: ImageBook[33]
   },
   {
     id: 34,
@@ -388,7 +286,7 @@ export const booksDetails = [
     book_autor: 'Christina Lauren',
     book_pages: '256 páginas',
     book_status: NaoLido,
-    book_img: Capa(34)
+    book_img: ImageBook[34]
   },
   {
     id: 35,
@@ -396,7 +294,7 @@ export const booksDetails = [
     book_autor: 'Matt Haig',
     book_pages: '200 / 308 páginas',
     book_status: Lendo,
-    book_img: Capa(35)
+    book_img: ImageBook[35]
   },
   {
     id: 36,
@@ -404,7 +302,7 @@ export const booksDetails = [
     book_autor: 'Mikki Daughtry e Rachael Lippincott',
     book_pages: '352 páginas',
     book_status: NaoLido,
-    book_img: Capa(36)
+    book_img: ImageBook[36]
   },
   {
     id: 37,
@@ -412,7 +310,7 @@ export const booksDetails = [
     book_autor: 'Won-pyung Sohn',
     book_pages: '288 páginas',
     book_status: NaoLido,
-    book_img: Capa(37)
+    book_img: ImageBook[37]
   },
   {
     id: 38,
@@ -420,7 +318,7 @@ export const booksDetails = [
     book_autor: 'K. L. Walther',
     book_pages: '320 páginas',
     book_status: NaoLido,
-    book_img: Capa(38)
+    book_img: ImageBook[38]
   },
   {
     id: 39,
@@ -428,7 +326,7 @@ export const booksDetails = [
     book_autor: 'Elena Armas',
     book_pages: '448 páginas',
     book_status: NaoLido,
-    book_img: Capa(39)
+    book_img: ImageBook[39]
   },
   {
     id: 40,
@@ -436,7 +334,7 @@ export const booksDetails = [
     book_autor: 'Taylor Jenkins Reid',
     book_pages: '296 páginas',
     book_status: NaoLido,
-    book_img: Capa(40)
+    book_img: ImageBook[40]
   },
   {
     id: 41,
@@ -444,7 +342,7 @@ export const booksDetails = [
     book_autor: 'Beth O’Leary',
     book_pages: '400 páginas',
     book_status: NaoLido,
-    book_img: Capa(41)
+    book_img: ImageBook[41]
   },
   {
     id: 42,
@@ -452,7 +350,7 @@ export const booksDetails = [
     book_autor: 'Sally Rooney',
     book_pages: '264 páginas',
     book_status: NaoLido,
-    book_img: Capa(42)
+    book_img: ImageBook[42]
   },
   {
     id: 43,
@@ -460,7 +358,7 @@ export const booksDetails = [
     book_autor: 'Dustin Thao',
     book_pages: '336 páginas',
     book_status: NaoLido,
-    book_img: Capa(43)
+    book_img: ImageBook[43]
   },
   {
     id: 44,
@@ -468,7 +366,7 @@ export const booksDetails = [
     book_autor: 'Emily Brontë',
     book_pages: '368 páginas',
     book_status: NaoLido,
-    book_img: Capa(44)
+    book_img: ImageBook[44]
   },
   {
     id: 45,
@@ -476,7 +374,7 @@ export const booksDetails = [
     book_autor: 'Lyssa Kay Adams',
     book_pages: '320 páginas',
     book_status: NaoLido,
-    book_img: Capa(45)
+    book_img: ImageBook[45]
   },
   {
     id: 46,
@@ -484,7 +382,7 @@ export const booksDetails = [
     book_autor: 'Antoine de Saint-Exupéry',
     book_pages: '96 páginas',
     book_status: NaoLido,
-    book_img: Capa(46)
+    book_img: ImageBook[46]
   },
   {
     id: 47,
@@ -492,7 +390,591 @@ export const booksDetails = [
     book_autor: 'P. M. Chester',
     book_pages: '15 / 15 páginas',
     book_status: Lido,
-    book_img: Capa(47)
+    book_img: ImageBook[47]
+  },
+  {
+    id: 48,
+    book_name: 'Até que eu te mate e nos separe',
+    book_autor: 'Lovely Loser',
+    book_pages: '369',
+    book_status: NaoLido,
+    book_img: ImageBook[48]
+  },
+  {
+    id: 49,
+    book_name: 'Quem é Eleanora Jones?',
+    book_autor: 'Ann H. Campbell',
+    book_pages: '258 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[49]
+  },
+  {
+    id: 50,
+    book_name: 'Deixa nevar',
+    book_autor: 'Camila Antunes',
+    book_pages: '402 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[50]
+  },
+  {
+    id: 51,
+    book_name: 'Coisas que guardei pra mim',
+    book_autor: 'Samara A. Buchweitz',
+    book_pages: '144 / 144 páginas',
+    book_status: Lido,
+    book_img: ImageBook[51]
+  },
+  {
+    id: 52,
+    book_name: 'A garota exemplar e o jogador cretino',
+    book_autor: 'Bianca Pohndorf',
+    book_pages: '485 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[52]
+  },
+  {
+    id: 53,
+    book_name: 'Mitologia nórdica',
+    book_autor: 'Neil Gaiman',
+    book_pages: '288 / 288 páginas',
+    book_status: Lido,
+    book_img: ImageBook[53]
+  },
+  {
+    id: 54,
+    book_name: 'Drácula',
+    book_autor: 'Bram Stoker',
+    book_pages: '432 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[54]
+  },
+  {
+    id: 55,
+    book_name: 'As lendas do rei Arthur e seus cavaleiros',
+    book_autor: 'Sir James Knowles',
+    book_pages: '304 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[55]
+  },
+  {
+    id: 56,
+    book_name: 'A canção de Aquiles',
+    book_autor: 'Madeline Miller',
+    book_pages: '420 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[56]
+  },
+  {
+    id: 57,
+    book_name: 'Eu tenho sério poemas mentais',
+    book_autor: 'Pedro Salomão',
+    book_pages: '205 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[57]
+  },
+  {
+    id: 58,
+    book_name: 'Todas as flores que não te enviei',
+    book_autor: 'Felipe Rocha',
+    book_pages: '232 / 232 páginas',
+    book_status: Lido,
+    book_img: ImageBook[58]
+  },
+  {
+    id: 59,
+    book_name: 'Mil beijos de garoto',
+    book_autor: 'Tilie Cole',
+    book_pages: '427 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[59]
+  },
+  {
+    id: 60,
+    book_name: 'E se as estrelas falassem?',
+    book_autor: 'Victor Marçal',
+    book_pages: '412 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[60]
+  },
+  {
+    id: 61,
+    book_name: 'Destinada aos lobos',
+    book_autor: 'Bruna Rodrigues',
+    book_pages: '412 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[61]
+  },
+  {
+    id: 62,
+    book_name: 'Depois daquele verão',
+    book_autor: 'Carley Fortune',
+    book_pages: '377 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[62]
+  },
+  {
+    id: 63,
+    book_name: 'Coraline',
+    book_autor: 'Neil Gaiman',
+    book_pages: '224 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[63]
+  },
+  {
+    id: 64,
+    book_name: 'O herdeiro roubado',
+    book_autor: 'Holly Black',
+    book_pages: '391 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[64]
+  },
+  {
+    id: 65,
+    book_name: 'Livro da noite',
+    book_autor: 'Holly Black',
+    book_pages: '364 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[65]
+  },
+  {
+    id: 66,
+    book_name: 'O canto mais escuro da floresta',
+    book_autor: 'Holly Black',
+    book_pages: '294 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[66]
+  },
+  {
+    id: 67,
+    book_name: 'O príncipe cruel',
+    book_autor: 'Holly Black',
+    book_pages: '322 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[67]
+  },
+  {
+    id: 68,
+    book_name: 'O rei perverso',
+    book_autor: 'Holly Black',
+    book_pages: '308 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[68]
+  },
+  {
+    id: 69,
+    book_name: 'A rainha do nada',
+    book_autor: 'Holly Black',
+    book_pages: '294 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[69]
+  },
+  {
+    id: 70,
+    book_name: 'Como o Rei de Elfhame aprendeu a odiar histórias',
+    book_autor: 'Holly Black',
+    book_pages: '192 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[70]
+  },
+  {
+    id: 71,
+    book_name: 'A ponte entre reinos',
+    book_autor: 'Danielle L. Jensen',
+    book_pages: '415 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[71]
+  },
+  {
+    id: 72,
+    book_name: 'O bosque das coisas perdidas',
+    book_autor: 'Shea Ernshaw',
+    book_pages: '368 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[72]
+  },
+  {
+    id: 73,
+    book_name: 'A lâmina da assassina',
+    book_autor: 'Sarah J. Mass',
+    book_pages: '432 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[73]
+  },
+  {
+    id: 74,
+    book_name: 'Trono de vidro',
+    book_autor: 'Sarah J. Mass',
+    book_pages: '416 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[74]
+  },
+  {
+    id: 75,
+    book_name: 'Corte de espinhos e rosas',
+    book_autor: 'Sarah J. Mass',
+    book_pages: '472 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[75]
+  },
+  {
+    id: 76,
+    book_name: 'Corte de névoa e fúria',
+    book_autor: 'Sarah J. Mass',
+    book_pages: '672 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[76]
+  },
+  {
+    id: 77,
+    book_name: 'Corte de asas e ruína',
+    book_autor: 'Sarah J. Mass',
+    book_pages: '686 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[77]
+  },
+  {
+    id: 78,
+    book_name: 'Corte de chamas prateadas',
+    book_autor: 'Sarah J. Mass',
+    book_pages: '776 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[78]
+  },
+  {
+    id: 79,
+    book_name: 'O Hobbit',
+    book_autor: 'J.R.R. Tolkien',
+    book_pages: '336 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[79]
+  },
+  {
+    id: 80,
+    book_name: 'Era uma vez um coração partido',
+    book_autor: 'Stephanie Garber',
+    book_pages: '336 / 336 páginas',
+    book_status: Lido,
+    book_img: ImageBook[80]
+  },
+  {
+    id: 81,
+    book_name: 'A balada do felizes para nunca',
+    book_autor: 'Stephanie Garber',
+    book_pages: '336 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[81]
+  },
+  {
+    id: 82,
+    book_name: 'Caraval',
+    book_autor: 'Stephanie Garber',
+    book_pages: '352 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[82]
+  },
+  {
+    id: 83,
+    book_name: 'Lendário',
+    book_autor: 'Stephanie Garber',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[83]
+  },
+  {
+    id: 84,
+    book_name: 'A Sociedade do Anel',
+    book_autor: 'J.R.R. Tolkien',
+    book_pages: '604 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[84]
+  },
+  {
+    id: 85,
+    book_name: 'As duas torres',
+    book_autor: 'J.R.R. Tolkien',
+    book_pages: '464 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[85]
+  },
+  {
+    id: 86,
+    book_name: 'O retorno do rei',
+    book_autor: 'J.R.R. Tolkien',
+    book_pages: '608 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[86]
+  },
+  {
+    id: 87,
+    book_name: 'O ladrão de raios',
+    book_autor: 'Rick Riordan',
+    book_pages: '400 / 400 páginas',
+    book_status: Lido,
+    book_img: ImageBook[87]
+  },
+  {
+    id: 88,
+    book_name: 'O mar de monstros',
+    book_autor: 'Rick Riordan',
+    book_pages: '304 / 304 páginas',
+    book_status: Lido,
+    book_img: ImageBook[88]
+  },
+  {
+    id: 89,
+    book_name: 'A maldição do titã',
+    book_autor: 'Rick Riordan',
+    book_pages: '336 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[89]
+  },
+  {
+    id: 90,
+    book_name: 'A batalha do labirinto',
+    book_autor: 'Rick Riordan',
+    book_pages: '392 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[90]
+  },
+  {
+    id: 91,
+    book_name: 'O último olimpiano',
+    book_autor: 'Rick Riordan',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[91]
+  },
+  {
+    id: 92,
+    book_name: 'Harry Potter e a pedra filosofal',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '223 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[92]
+  },
+  {
+    id: 93,
+    book_name: 'Harry Potter e a câmara secreta',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '252 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[93]
+  },
+  {
+    id: 94,
+    book_name: 'Harry Potter e o prisioneiro de azkaban',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '318 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[94]
+  },
+  {
+    id: 95,
+    book_name: 'Harry Potter e o cálice de fogo',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '535 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[95]
+  },
+  {
+    id: 96,
+    book_name: 'Harry Potter e a ordem da fênix',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '703 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[96]
+  },
+  {
+    id: 97,
+    book_name: 'Harry Potter e o enigma do príncipe',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '471 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[97]
+  },
+  {
+    id: 98,
+    book_name: 'Harry Potter e as relíquias da morte',
+    book_autor: 'J. K. ROWLING',
+    book_pages: '551 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[98]
+  },
+  {
+    id: 99,
+    book_name: 'O desafio de ferro',
+    book_autor: 'Holly Black & Cassandra Clare',
+    book_pages: '350 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[99]
+  },
+  {
+    id: 100,
+    book_name: 'A luva de cobre',
+    book_autor: 'Holly Black & Cassandra Clare',
+    book_pages: '304 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[100]
+  },
+  {
+    id: 101,
+    book_name: 'A chave de bronze',
+    book_autor: 'Holly Black & Cassandra Clare',
+    book_pages: '272 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[101]
+  },
+  {
+    id: 102,
+    book_name: 'A máscara de prata',
+    book_autor: 'Holly Black & Cassandra Clare',
+    book_pages: '240 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[102]
+  },
+  {
+    id: 103,
+    book_name: 'A torre de ouro',
+    book_autor: 'Holly Black & Cassandra Clare',
+    book_pages: '240 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[103]
+  },
+  {
+    id: 104,
+    book_name: 'Luzes do norte',
+    book_autor: 'Giulianna Domingues',
+    book_pages: '280 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[104]
+  },
+  {
+    id: 105,
+    book_name: 'Sombras do sul',
+    book_autor: 'Giulianna Domingues',
+    book_pages: '352 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[105]
+  },
+  {
+    id: 106,
+    book_name: 'As aventuras de Sherlock Holmes',
+    book_autor: 'Arthur Conan Doyle',
+    book_pages: '208 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[106]
+  },
+  {
+    id: 107,
+    book_name: 'O cão dos baskerville',
+    book_autor: 'Arthur Conan Doyle',
+    book_pages: '224 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[107]
+  },
+  {
+    id: 108,
+    book_name: 'Mais aventuras de Sherlock Holmes',
+    book_autor: 'Arthur Conan Doyle',
+    book_pages: '208 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[108]
+  },
+  {
+    id: 109,
+    book_name: 'O signo dos quatro',
+    book_autor: 'Arthur Conan Doyle',
+    book_pages: '160 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[109]
+  },
+  {
+    id: 110,
+    book_name: 'Um estudo em vermelho',
+    book_autor: 'Arthur Conan Doyle',
+    book_pages: '176 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[110]
+  },
+  {
+    id: 111,
+    book_name: 'O vale do medo',
+    book_autor: 'Arthur Conan Doyle',
+    book_pages: '224 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[111]
+  },
+  {
+    id: 112,
+    book_name: 'Viagem ao centro da terra',
+    book_autor: 'Júlio Verne',
+    book_pages: '304 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[112]
+  },
+  {
+    id: 113,
+    book_name: 'A volta ao mundo em 80 dias',
+    book_autor: 'Júlio Verne',
+    book_pages: '304 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[113]
+  },
+  {
+    id: 114,
+    book_name: 'Vinte mil léguas submarinas',
+    book_autor: 'Júlio Verne',
+    book_pages: '368 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[114]
+  },
+  {
+    id: 115,
+    book_name: 'Cinco semanas em um balão',
+    book_autor: 'Júlio Verne',
+    book_pages: '288 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[115]
+  },
+  {
+    id: 116,
+    book_name: 'Da terra à lua',
+    book_autor: 'Júlio Verne',
+    book_pages: '192 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[116]
+  },
+  {
+    id: 117,
+    book_name: 'A ilha misteriosa',
+    book_autor: 'Júlio Verne',
+    book_pages: '416 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[117]
+  },
+  {
+    id: 118,
+    book_name: 'Rápido e devagar: Duas formas de pensar',
+    book_autor: 'Daniel Kahneman',
+    book_pages: '608 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[118]
+  },
+  {
+    id: 119,
+    book_name: 'O design do dia a dia',
+    book_autor: 'Donald A. Norman',
+    book_pages: '272 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[119]
+  },
+  {
+    id: 120,
+    book_name: 'Não me faça pensar',
+    book_autor: 'Steve Krug',
+    book_pages: '212 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[120]
   },
 ]
 

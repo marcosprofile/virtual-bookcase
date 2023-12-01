@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <FlexContainer displayFlex height="100vh">
+        <FlexContainer height="100vh">
           <Menu />
           <Outlet />
         </FlexContainer>

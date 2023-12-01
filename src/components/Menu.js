@@ -65,7 +65,7 @@ const Menu = () => {
             width="3rem"
             height="3rem"
             radius="100%"
-          ></Imagem>
+          />
           <FlexContainer
             direction="column"
             align="start"
