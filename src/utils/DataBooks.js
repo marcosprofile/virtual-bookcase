@@ -124,8 +124,8 @@ export const booksDetails = [
     id: 14,
     book_name: 'A hipótese do amor',
     book_autor: 'Ali Hazelwood',
-    book_pages: '336 páginas',
-    book_status: NaoLido,
+    book_pages: '131 / 336 páginas',
+    book_status: Lendo,
     book_img: ImageBook[14]
   },
   {
@@ -292,8 +292,8 @@ export const booksDetails = [
     id: 35,
     book_name: 'A biblioteca da meia-noite',
     book_autor: 'Matt Haig',
-    book_pages: '200 / 308 páginas',
-    book_status: Lendo,
+    book_pages: '308 / 308 páginas',
+    book_status: Lido,
     book_img: ImageBook[35]
   },
   {
@@ -724,24 +724,24 @@ export const booksDetails = [
     id: 89,
     book_name: 'A maldição do titã',
     book_autor: 'Rick Riordan',
-    book_pages: '336 páginas',
-    book_status: NaoLido,
+    book_pages: '336 / 336 páginas',
+    book_status: Lido,
     book_img: ImageBook[89]
   },
   {
     id: 90,
     book_name: 'A batalha do labirinto',
     book_autor: 'Rick Riordan',
-    book_pages: '392 páginas',
-    book_status: NaoLido,
+    book_pages: '392 / 392 páginas',
+    book_status: Lido,
     book_img: ImageBook[90]
   },
   {
     id: 91,
     book_name: 'O último olimpiano',
     book_autor: 'Rick Riordan',
-    book_pages: '384 páginas',
-    book_status: NaoLido,
+    book_pages: '384 / 384 páginas',
+    book_status: Lido,
     book_img: ImageBook[91]
   },
   {
@@ -975,6 +975,14 @@ export const booksDetails = [
     book_pages: '212 páginas',
     book_status: NaoLido,
     book_img: ImageBook[120]
+  },
+  {
+    id: 121,
+    book_name: 'O fim de todas as coisas',
+    book_autor: 'Katie Mack',
+    book_pages: '272 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[121]
   },
 ]
 

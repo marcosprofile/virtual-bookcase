@@ -119,6 +119,7 @@ import Book_118 from '../assets/julio_verne_6.png';
 import Book_119 from '../assets/rapido_e_devagar.png';
 import Book_120 from '../assets/o_design_do_dia_a_dia.png';
 import Book_121 from '../assets/nao_me_faca_pensar.png';
+import Book_122 from '../assets/o_fim_de_todas_as_coisas.png';
 
 const ImageBook = [
   Book_1,
@@ -241,7 +242,8 @@ const ImageBook = [
   Book_118,
   Book_119,
   Book_120,
-  Book_121
+  Book_121,
+  Book_122
 ]
 
 export default ImageBook;
