@@ -12,8 +12,10 @@ const Lendo = () => {
       <FlexContainer
         justify="space-between"
         padding="1.5rem 2.5rem"
+        responsiveP="1rem"
         boxShadow="bottom" 
         width="100%"
+        responsiveJ
         bgColor
       >
         <FlexContainer align="center" gap="1rem">
@@ -22,7 +24,7 @@ const Lendo = () => {
             <Heading fontWeight="semibold">{count}</Heading>
           </FlexContainer>
         </FlexContainer>
-        <FlexContainer gap="2.5rem">
+        <FlexContainer responsiveD gap="2.5rem">
           <FlexContainer align="center" gap=".5rem">
             <Imagem width="24px" height="24px" src="./nao_lido.png" />
             <Heading size="h2">Não lido</Heading>
@@ -37,7 +39,7 @@ const Lendo = () => {
           </FlexContainer>
         </FlexContainer>
       </FlexContainer>
-      <FlexContainer padding="2rem 2.5rem" height="100vh" overflowX>
+      <FlexContainer responsiveP="3rem 1rem 4rem 1rem" padding="2rem 2.5rem" height="100vh" overflowX>
         <Reading />
       </FlexContainer>
     </FlexContainer>

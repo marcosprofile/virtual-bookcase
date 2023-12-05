@@ -45,6 +45,7 @@ const Menu = () => {
       width="328px"
       height="100vh"
       bgColor
+      responsiveW
       boxShadow="right"
       zIndex="1"
       >
@@ -53,12 +54,14 @@ const Menu = () => {
         bottom="32px"
         left="24px"
         right="24px"
+        responsiveP="1rem"
       >
         <FlexContainer
           gap="12px"
           bottom="1.5rem"
           align="center"
           borderBottom
+          responsiveD
         >
           <Imagem
             src="user_image.png"
@@ -89,6 +92,8 @@ const Menu = () => {
           direction="column"
           gap=".75rem"
           top="1.5rem"
+          responsiveP="0"
+          responsiveC="row"
         >
           <Button href="/" selected={selectedButton === 'todos'} onClick={() => handleButtonClick('todos')}>
             Todos

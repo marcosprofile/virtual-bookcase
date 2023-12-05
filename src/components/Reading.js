@@ -6,13 +6,12 @@ import Book from './layouts/Book';
 
 const Reading = () => {
   return (
-    <FlexContainer flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="4rem">
+    <FlexContainer responsiveJ flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="4rem">
       {booksReadings.map((book) => (
         <FlexContainer key={book.id} height="auto">
           <Book data={book} />
         </FlexContainer>
       ))}
-      
     </FlexContainer>
   )
 }

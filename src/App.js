@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <FlexContainer height="100vh">
+        <FlexContainer responsiveC="column" height="100vh">
           <Menu />
           <Outlet />
         </FlexContainer>

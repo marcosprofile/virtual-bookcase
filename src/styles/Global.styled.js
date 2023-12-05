@@ -6,6 +6,10 @@ export const PaddingContainer = styled.div`
   padding: ${({ padding }) => padding};
   padding-left: ${({ left }) => left};
   padding-top: ${({ top }) => top};
+
+  @media (max-width: 920px) {
+    padding: ${({ responsiveP }) => responsiveP};
+  }
 `;
 
 export const FlexContainer = styled(PaddingContainer)`
@@ -84,6 +88,41 @@ export const FlexContainer = styled(PaddingContainer)`
   ::-webkit-scrollbar-thumb:hover {
     background-color: #333333;
   }
+
+  @media (max-width: 920px) {
+    display: ${({ responsiveD }) => responsiveD ? 'none' : 'flex'};
+    flex-direction: ${({ responsiveC }) => {
+      switch(responsiveC) {
+        case 'column':
+          return 'column';
+
+        case 'row':
+          return 'row';
+
+        default:
+          return;
+      };
+    }};
+    width: ${({ responsiveW }) => responsiveW ? 'auto' : ''};
+    height: ${({ responsiveH }) => responsiveH ? '100vh' : ''};
+    justify-content: ${({ responsiveJ }) => responsiveJ ? 'center' : ''};
+    gap: ${({ responsiveG }) => responsiveG ? '2rem 2rem' : ''};
+    box-shadow: ${({ boxShadow, theme }) => {
+      switch(boxShadow) {
+        case 'right':
+          return 'none';
+
+        case 'bottom':
+          return "0px 20px 24px 0px rgba(0, 0, 0, 0.40)";
+
+        case 'back':
+          return theme.shadows.back;
+
+        default:
+          return;
+      };
+    }};
+  }
 `;
 
 export const Heading = styled(PaddingContainer)`
@@ -125,17 +164,40 @@ export const Heading = styled(PaddingContainer)`
         return;
     };
   }};
+
+  @media (max-width: 920px) {
+    font-size: ${({ size }) => {
+    switch(size) {
+      case 'h1':
+        return '1.25rem';
+      
+      case 'h2':
+        return '1rem';
+
+      case 'p':
+        return '.875rem';
+
+      default:
+        return;
+    };
+  }};
+  }
 `;
 
 export const Imagem = styled.img`
   box-shadow: ${({ shadow }) => shadow ? "0px 0px 12px 4px rgba(0, 0, 0, 0.50)" : ""};
   border-radius: ${({ radius }) => radius};
-  height: ${({ height }) => height};
   width: ${({ width }) => width};
+  height: ${({ height }) => height};
 `;
 
 export const Book = styled.img`
   box-shadow: ${({ theme }) => theme.shadows.book};
+
+  @media (max-width: 920px) {
+    width: ${({ responsiveW }) => responsiveW};
+    height: ${({ responsiveH }) => responsiveH};
+  }
 `;
 
 export const Button = styled.a`
@@ -153,6 +215,11 @@ export const Button = styled.a`
   &:hover {
     background: ${({ selected }) => selected ? "" : "#333333"};
   };
+
+  @media (max-width: 920px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const Scroll = styled(FlexContainer).attrs({ as: 'a'})`

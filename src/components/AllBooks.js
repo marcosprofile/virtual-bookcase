@@ -9,7 +9,7 @@ import { FaAnglesUp } from "react-icons/fa6";
 const AllBooks = () => {
 
   return (
-    <FlexContainer flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="4rem">
+    <FlexContainer responsiveG responsiveJ flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="4rem">
       {booksDetails.map((book) => (
         <FlexContainer key={book.id} height="auto">
           <Book data={book} />
@@ -21,6 +21,7 @@ const AllBooks = () => {
         justify="center"
         width="-webkit-fill-available"
         p_bottom="40px"
+        responsiveD
       >
         <Scroll
           bgColor="black_light"
