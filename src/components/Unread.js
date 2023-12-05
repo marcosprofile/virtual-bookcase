@@ -8,7 +8,7 @@ import { FaAnglesUp } from 'react-icons/fa6';
 
 const Unread = () => {
   return (
-    <FlexContainer responsiveJ flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="4rem">
+    <FlexContainer responsiveJ flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="12rem">
       {booksUnreads.map((book) => (
         <FlexContainer key={book.id} height="auto">
           <Book data={book} />
