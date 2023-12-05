@@ -26,6 +26,8 @@ const Book = ({ data }) => {
       </Heading>
 
       <Imagem
+        imageWResponsive
+        imageHResponsive
         width="168px"
         height="248px"
         radius=".5rem"
@@ -36,6 +38,7 @@ const Book = ({ data }) => {
       />
 
       <FlexContainer
+        imageWResponsive
         width="168px"
         direction="column" 
         align="center"

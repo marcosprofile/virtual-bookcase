@@ -104,6 +104,7 @@ export const FlexContainer = styled(PaddingContainer)`
       };
     }};
     width: ${({ responsiveW }) => responsiveW ? 'auto' : ''};
+    width: ${({ imageWResponsive }) => imageWResponsive ? '132px !important' : ''};
     height: ${({ responsiveH }) => responsiveH ? '100vh' : ''};
     justify-content: ${({ responsiveJ }) => responsiveJ ? 'center' : ''};
     gap: ${({ responsiveG }) => responsiveG ? '2rem 2rem' : ''};
@@ -122,7 +123,7 @@ export const FlexContainer = styled(PaddingContainer)`
           return;
       };
     }};
-  }
+}
 `;
 
 export const Heading = styled(PaddingContainer)`
@@ -189,6 +190,11 @@ export const Imagem = styled.img`
   border-radius: ${({ radius }) => radius};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
+
+  @media (max-width: 920px) {
+    width: ${({ imageWResponsive }) => imageWResponsive ? '132px !important' : ''};
+    height: ${({ imageHResponsive }) => imageHResponsive ? '212px !important' : ''};
+  }
 `;
 
 export const Book = styled.img`
@@ -219,6 +225,8 @@ export const Button = styled.a`
   @media (max-width: 920px) {
     width: 100%;
     text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
   }
 `;
 
