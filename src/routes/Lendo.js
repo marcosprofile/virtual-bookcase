@@ -39,7 +39,7 @@ const Lendo = () => {
           </FlexContainer>
         </FlexContainer>
       </FlexContainer>
-      <FlexContainer justify="center" responsiveP="3rem 1rem 4rem 1rem" padding="2rem 2.5rem" height="100vh" overflowX>
+      <FlexContainer responsiveJ responsiveP="3rem 1rem 4rem 1rem" padding="2rem 2.5rem" height="100vh" overflowX>
         <Reading />
       </FlexContainer>
     </FlexContainer>
