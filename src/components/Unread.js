@@ -8,7 +8,19 @@ import { FaAnglesUp } from 'react-icons/fa6';
 
 const Unread = () => {
   return (
-    <FlexContainer id="0" responsiveJ flexWrap alignContent gap="3rem 1.34rem" height="max-content" bottom="12rem">
+    <FlexContainer
+      responsiveP="3rem 1rem 4rem 1rem"
+      padding="2rem 2.5rem 6rem 2rem"
+      height="100vh"
+      gap="3rem 1.44rem"
+      bottom="12rem"
+      alignContent
+      responsiveG
+      responsiveJ
+      overflowX
+      flexWrap
+      id="0"
+    >
       {booksUnreads.map((book) => (
         <FlexContainer key={book.id} height="auto">
           <Book data={book} />
@@ -19,7 +31,8 @@ const Unread = () => {
         position="absolute"
         justify="center"
         width="-webkit-fill-available"
-        p_bottom="40px"
+        p_bottom="2.5rem"
+        right="5rem"
         responsiveD
       >
         <Scroll

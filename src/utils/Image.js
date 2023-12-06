@@ -120,6 +120,7 @@ import Book_119 from '../assets/rapido_e_devagar.png';
 import Book_120 from '../assets/o_design_do_dia_a_dia.png';
 import Book_121 from '../assets/nao_me_faca_pensar.png';
 import Book_122 from '../assets/o_fim_de_todas_as_coisas.png';
+import Book_123 from '../assets/bem_vindos_a_livraria_hyunam_dong.png';
 
 const ImageBook = [
   Book_1,
@@ -243,7 +244,8 @@ const ImageBook = [
   Book_119,
   Book_120,
   Book_121,
-  Book_122
+  Book_122,
+  Book_123,
 ]
 
 export default ImageBook;

@@ -70,7 +70,7 @@ export const FlexContainer = styled(PaddingContainer)`
 
   /* Scroll */
   scroll-behavior: smooth;
-  scroll-margin-top: 50px;
+  scroll-margin-top: 50000px;
 
   ::-webkit-scrollbar {
     width: 14px;
@@ -107,7 +107,7 @@ export const FlexContainer = styled(PaddingContainer)`
     width: ${({ imageWResponsive }) => imageWResponsive ? '132px !important' : ''};
     height: ${({ responsiveH }) => responsiveH ? '100vh' : ''};
     justify-content: ${({ responsiveJ }) => responsiveJ ? 'center' : ''};
-    gap: ${({ responsiveG }) => responsiveG ? '2rem 2rem' : ''};
+    gap: ${({ responsiveG }) => responsiveG ? '' : ''};
     box-shadow: ${({ boxShadow, theme }) => {
       switch(boxShadow) {
         case 'right':

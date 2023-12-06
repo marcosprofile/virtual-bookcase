@@ -984,6 +984,14 @@ export const booksDetails = [
     book_status: NaoLido,
     book_img: ImageBook[121]
   },
+  {
+    id: 122,
+    book_name: 'Bem-vindos à livraria Hyunam-dong',
+    book_autor: 'Hwang Bo-Reum',
+    book_pages: '272 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[122]
+  },
 ]
 
 export const booksReadings = booksDetails.filter(book => book.book_status === Lendo)

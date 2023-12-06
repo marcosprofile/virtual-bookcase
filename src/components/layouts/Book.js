@@ -17,6 +17,7 @@ const Book = ({ data }) => {
           draggable="false"
         />
       </FlexContainer>
+
       <Heading
         padding=".5rem"
         align="center" size="p"
@@ -44,6 +45,7 @@ const Book = ({ data }) => {
         align="center"
         padding=".5rem 0"
       >
+
         <Heading
           title={ data.book_name }
           width="100%"
@@ -55,6 +57,7 @@ const Book = ({ data }) => {
         >
           { data.book_name }
         </Heading>
+
         <Heading
           title={ data.book_autor }
           width="100%"
@@ -67,6 +70,7 @@ const Book = ({ data }) => {
         >
           { data.book_autor }
         </Heading>
+
       </FlexContainer>
     </FlexContainer>
   )
