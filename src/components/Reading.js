@@ -7,7 +7,7 @@ import Book from './layouts/Book';
 const Reading = () => {
   return (
     <FlexContainer
-      responsiveP="3rem 1rem 4rem 1rem"
+      responsiveP="3rem 1rem 12rem 1rem"
       padding="2rem 2.5rem 6rem 2rem"
       height="100vh"
       gap="3rem 1.44rem"
