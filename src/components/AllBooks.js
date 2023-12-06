@@ -7,9 +7,6 @@ import Book from './layouts/Book';
 import { FaAnglesUp } from "react-icons/fa6";
 
 const AllBooks = () => {
-
-  // responsiveP="3rem 1rem 4rem 1rem" padding="2rem 2.5rem" height="100vh" overflowX
-
   return (
     <FlexContainer
       responsiveP="3rem 1rem 16rem 1rem"
