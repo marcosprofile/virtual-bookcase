@@ -124,8 +124,8 @@ export const booksDetails = [
     id: 14,
     book_name: 'A hipótese do amor',
     book_autor: 'Ali Hazelwood',
-    book_pages: '131 / 336 páginas',
-    book_status: Lendo,
+    book_pages: '336 / 336 páginas',
+    book_status: Lido,
     book_img: ImageBook[14]
   },
   {
@@ -572,8 +572,8 @@ export const booksDetails = [
     id: 70,
     book_name: 'Como o Rei de Elfhame aprendeu a odiar histórias',
     book_autor: 'Holly Black',
-    book_pages: '192 páginas',
-    book_status: NaoLido,
+    book_pages: '88 / 192 páginas',
+    book_status: Lendo,
     book_img: ImageBook[70]
   },
   {
@@ -660,8 +660,8 @@ export const booksDetails = [
     id: 81,
     book_name: 'A balada do felizes para nunca',
     book_autor: 'Stephanie Garber',
-    book_pages: '336 páginas',
-    book_status: NaoLido,
+    book_pages: '336 / 336 páginas',
+    book_status: Lido,
     book_img: ImageBook[81]
   },
   {
@@ -988,8 +988,8 @@ export const booksDetails = [
     id: 122,
     book_name: 'Bem-vindos à livraria Hyunam-dong',
     book_autor: 'Hwang Bo-Reum',
-    book_pages: '272 páginas',
-    book_status: NaoLido,
+    book_pages: '272 / 272 páginas',
+    book_status: Lido,
     book_img: ImageBook[122]
   },
   {
