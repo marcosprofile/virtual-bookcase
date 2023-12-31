@@ -31,8 +31,7 @@ const Unread = () => {
         position="absolute"
         justify="center"
         width="-webkit-fill-available"
-        p_bottom="2.5rem"
-        right="5rem"
+        p_bottom="40px"
         responsiveD
       >
         <Scroll

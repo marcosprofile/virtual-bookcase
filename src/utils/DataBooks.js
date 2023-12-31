@@ -992,6 +992,30 @@ export const booksDetails = [
     book_status: NaoLido,
     book_img: ImageBook[122]
   },
+  {
+    id: 123,
+    book_name: 'Loucos por livros',
+    book_autor: 'Emily Henry',
+    book_pages: '434 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[123]
+  },
+  {
+    id: 124,
+    book_name: 'Uma questão de química',
+    book_autor: 'Bonnie Garmus',
+    book_pages: '384 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[124]
+  },
+  {
+    id: 125,
+    book_name: 'Amazon Sem Limites',
+    book_autor: 'Brad Stone',
+    book_pages: '512 páginas',
+    book_status: NaoLido,
+    book_img: ImageBook[125]
+  },
 ]
 
 export const booksReadings = booksDetails.filter(book => book.book_status === Lendo)

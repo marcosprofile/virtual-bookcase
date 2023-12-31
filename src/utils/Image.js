@@ -121,6 +121,9 @@ import Book_120 from '../assets/o_design_do_dia_a_dia.png';
 import Book_121 from '../assets/nao_me_faca_pensar.png';
 import Book_122 from '../assets/o_fim_de_todas_as_coisas.png';
 import Book_123 from '../assets/bem_vindos_a_livraria_hyunam_dong.png';
+import Book_124 from '../assets/loucos_por_livros.png';
+import Book_125 from '../assets/uma_questao_de_quimica.png';
+import Book_126 from '../assets/amazon_sem_limites.png';
 
 const ImageBook = [
   Book_1,
@@ -246,6 +249,9 @@ const ImageBook = [
   Book_121,
   Book_122,
   Book_123,
+  Book_124,
+  Book_125,
+  Book_126,
 ]
 
 export default ImageBook;
