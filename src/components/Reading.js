@@ -16,7 +16,7 @@ const Reading = () => {
       responsiveG
       responsiveJ
       overflowX
-      flexWrap
+      flexWrap={true}
       id="0"
     >
       {booksReadings.map((book) => (

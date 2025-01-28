@@ -18,7 +18,7 @@ const Finished = () => {
       responsiveG
       responsiveJ
       overflowX
-      flexWrap
+      flexWrap={true}
       id="0"
     >
       {booksFinisheds.map((book) => (

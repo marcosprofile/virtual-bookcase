@@ -12,19 +12,17 @@ const AllBooks = () => {
       responsiveP="3rem 1rem 16rem 1rem"
       padding="2rem 2.5rem 6rem 2rem"
       height="100vh"
-      gap="3rem 1.44rem"
+      gap="3rem 1.25rem"
       bottom="12rem"
       alignContent
       responsiveG
       responsiveJ
       overflowX
-      flexWrap
+      flexWrap={true}
       id="0"
     >
       {booksDetails.map((book) => (
-        <FlexContainer key={book.id} height="auto">
-          <Book data={book} />
-        </FlexContainer>
+        <Book key={book.id} data={book} />
       ))}
 
       <FlexContainer

@@ -18,7 +18,7 @@ const Unread = () => {
       responsiveG
       responsiveJ
       overflowX
-      flexWrap
+      flexWrap={true}
       id="0"
     >
       {booksUnreads.map((book) => (

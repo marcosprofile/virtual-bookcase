@@ -124,6 +124,12 @@ import Book_123 from '../assets/bem_vindos_a_livraria_hyunam_dong.png';
 import Book_124 from '../assets/loucos_por_livros.png';
 import Book_125 from '../assets/uma_questao_de_quimica.png';
 import Book_126 from '../assets/amazon_sem_limites.png';
+import Book_127 from '../assets/a_empregada.png';
+import Book_128 from '../assets/o_segredo_da_empregada.png';
+import Book_129 from '../assets/a_empregada_esta_de_olho.png';
+import Book_130 from '../assets/noiva.png';
+import Book_131 from '../assets/assistente_do_vilao.png';
+import Book_132 from '../assets/aprendiz_do_vilao.png';
 
 const ImageBook = [
   Book_1,
@@ -252,6 +258,12 @@ const ImageBook = [
   Book_124,
   Book_125,
   Book_126,
+  Book_127,
+  Book_128,
+  Book_129,
+  Book_130,
+  Book_131,
+  Book_132,
 ]
 
 export default ImageBook;

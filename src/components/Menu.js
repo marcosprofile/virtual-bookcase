@@ -78,7 +78,7 @@ const Menu = () => {
               width="100%"
               size="h2"
               fontWeight="semibold"
-              textOverflow
+              textOverflow={true}
               whiteSpace
               overflow
               title={nome}

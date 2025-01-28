@@ -16,7 +16,7 @@ export const FlexContainer = styled(PaddingContainer)`
   display: flex;
   align-content: ${({ alignContent }) => alignContent ? "baseline" : ""};
   overflow-y: ${({ overflowX }) => overflowX ? "auto" : ""};
-  flex-wrap: ${({ flexWrap }) => flexWrap ? "wrap" : ""};
+  flex-wrap: ${({ flexWrap }) => flexWrap && `wrap`};
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ justify }) => justify};
   border-radius: ${({ radius }) => radius};
@@ -29,6 +29,7 @@ export const FlexContainer = styled(PaddingContainer)`
   height: ${({ height }) => height};
   left: ${({ p_left }) => p_left};
   width: ${({ width }) => width};
+  max-width: ${({ mWidth }) => mWidth};
   top: ${({ p_top }) => p_top};
   gap: ${({ gap }) => gap};
   box-sizing: border-box;
@@ -127,7 +128,7 @@ export const FlexContainer = styled(PaddingContainer)`
 `;
 
 export const Heading = styled(PaddingContainer)`
-  text-overflow: ${({ textOverflow }) => textOverflow ? "ellipsis" : ""};
+  text-overflow: ${({ textOverflow }) => textOverflow && `ellipsis`};
   white-space: ${({ whiteSpace }) => whiteSpace ? "nowrap" : ""};
   overflow: ${({ overflow }) => overflow ? "hidden" : ""};
   color: ${({ theme }) => theme.colors.white};
