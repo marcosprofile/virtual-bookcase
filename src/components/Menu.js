@@ -14,7 +14,6 @@ const Menu = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Atualiza o estado com base na rota atual
     switch (location.pathname) {
       case '/':
         setSelectedButton('todos');
@@ -29,9 +28,9 @@ const Menu = () => {
         setSelectedButton('naolidos');
         break;
       default:
-        setSelectedButton('todos'); // Define um valor padrão para casos de rota desconhecida
+        setSelectedButton('todos');
     }
-  }, [location.pathname]); // Executa sempre que a rota mudar
+  }, [location.pathname]);
 
   const handleButtonClick = (buttonId) => {
     setSelectedButton(buttonId);
